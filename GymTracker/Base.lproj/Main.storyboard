@@ -115,7 +115,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="i6c-Jt-q41">
                             <connections>
-                                <segue destination="uwU-cD-Op2" kind="unwind" unwindAction="saveUbung:" id="lqQ-f6-9QK"/>
+                                <segue destination="uwU-cD-Op2" kind="unwind" unwindAction="saveToUbungenTableView:" id="Wf4-gC-d1f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

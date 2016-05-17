@@ -64,6 +64,16 @@ class UbungenTableViewController: UITableViewController {
     
     @IBAction func cancelToUbungenTableView(segue:UIStoryboardSegue) {
     }
+    @IBAction func saveToUbungenTableView(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? UbungenViewController, ubung = sourceViewController.ubung {
+            let newIndexPath = NSIndexPath(forRow: ubungen.count, inSection: 0)
+            ubungen.append(ubung)
+            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+            
+        }
+            
+        
+    }
     
     
 
