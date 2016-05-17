@@ -20,6 +20,8 @@
 		17AA149C1CE72C330077627E /* UbungenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA149B1CE72C330077627E /* UbungenViewController.swift */; };
 		17AA149E1CE735060077627E /* UbungenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA149D1CE735060077627E /* UbungenTableViewController.swift */; };
 		17AA14A01CE75FF70077627E /* Ubung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA149F1CE75FF70077627E /* Ubung.swift */; };
+		17AA14A41CEB53630077627E /* TrainingsTagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA14A31CEB53630077627E /* TrainingsTagTableViewController.swift */; };
+		17AA14A61CEB54660077627E /* TraingsPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA14A51CEB54660077627E /* TraingsPlanTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		17AA149B1CE72C330077627E /* UbungenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbungenViewController.swift; sourceTree = "<group>"; };
 		17AA149D1CE735060077627E /* UbungenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbungenTableViewController.swift; sourceTree = "<group>"; };
 		17AA149F1CE75FF70077627E /* Ubung.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ubung.swift; sourceTree = "<group>"; };
+		17AA14A31CEB53630077627E /* TrainingsTagTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsTagTableViewController.swift; sourceTree = "<group>"; };
+		17AA14A51CEB54660077627E /* TraingsPlanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraingsPlanTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			children = (
 				17467B381CE5D3F3009EBC6B /* AppDelegate.swift */,
 				17467B3A1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift */,
+				17AA14A31CEB53630077627E /* TrainingsTagTableViewController.swift */,
+				17AA14A51CEB54660077627E /* TraingsPlanTableViewController.swift */,
 				17467B581CE61206009EBC6B /* TrainingsTagViewController.swift */,
 				17467B3C1CE5D3F3009EBC6B /* Main.storyboard */,
 				17AA149B1CE72C330077627E /* UbungenViewController.swift */,
@@ -222,6 +228,8 @@
 				17AA149A1CE726840077627E /* UbungenTableViewCell.swift in Sources */,
 				17467B3B1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift in Sources */,
 				17AA14981CE726710077627E /* TraingsPlanTableViewCell.swift in Sources */,
+				17AA14A41CEB53630077627E /* TrainingsTagTableViewController.swift in Sources */,
+				17AA14A61CEB54660077627E /* TraingsPlanTableViewController.swift in Sources */,
 				17AA149E1CE735060077627E /* UbungenTableViewController.swift in Sources */,
 				17AA14A01CE75FF70077627E /* Ubung.swift in Sources */,
 				17467B591CE61206009EBC6B /* TrainingsTagViewController.swift in Sources */,

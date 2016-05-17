@@ -48,8 +48,7 @@ class UbungenViewController: UIViewController, UITextFieldDelegate, UINavigation
 
     // MARK: - Navigation
      
-    @IBAction func cancelToUbungen(segue:UIStoryboardSegue) {
-    }
+
     
     @IBAction func saveUbung(segue:UIStoryboardSegue) {
     }

@@ -1,71 +1,57 @@
 //
-//  UbungenTableViewController.swift
+//  TrainingsTagTableViewController.swift
 //  GymTracker
 //
-//  Created by Florian M. on 14/05/16.
+//  Created by Florian M. on 17/05/16.
 //  Copyright © 2016 Florian M. All rights reserved.
 //
 
 import UIKit
 
-class UbungenTableViewController: UITableViewController {
-    
-    @IBOutlet weak var CancelToTagTableView: UIBarButtonItem!
-    
-    var ubungen = [Ubung]()
-    
+class TrainingsTagTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load Sample Übungen
-        
-        loadSampleUbungen()
-    }
-    
-    func loadSampleUbungen() {
-        let ubung1 = Ubung(name: "Kniebeugen", big: true, idealGewicht: 90)!
-        let ubung2 = Ubung(name: "Kreuzheben", big: true, idealGewicht: 90)!
-        ubungen += [ubung1, ubung2]
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-   
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ubungen.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
-
     
+    // MARK: Navigation
+    
+    @IBAction func cancelToTagTableView(segue:UIStoryboardSegue) {
+    }
+    
+
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-      
-        let cellIdentifer = "UbungenTableViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer, forIndexPath: indexPath) as! UbungenTableViewCell
-        
-        
-        
-        let ubung = ubungen[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
-        
-        cell.nameLabel.text = ubung.name
-        
-    
 
         return cell
     }
- 
-    
-    // MARK: - Navigation
-    
-    @IBAction func cancelToUbungenTableView(segue:UIStoryboardSegue) {
-    }
-    
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.

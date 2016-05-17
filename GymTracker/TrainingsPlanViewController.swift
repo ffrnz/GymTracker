@@ -21,8 +21,9 @@ class TrainingsPlanViewController: UIViewController {
 
     // MARK: Actions
     
-
+    // MARK: Navigation
     
+
 
 
 }

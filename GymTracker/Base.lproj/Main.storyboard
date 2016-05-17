@@ -110,7 +110,7 @@
                     <navigationItem key="navigationItem" id="YYD-ZQ-Pum">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dLk-vA-6VY">
                             <connections>
-                                <segue destination="uwU-cD-Op2" kind="unwind" unwindAction="cancelToUbungen:" id="Y7I-da-3Uy"/>
+                                <segue destination="uwU-cD-Op2" kind="unwind" unwindAction="cancelToUbungenTableView:" id="yea-LX-j8A"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="i6c-Jt-q41">
@@ -120,7 +120,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancelToUbungen" destination="dLk-vA-6VY" id="DxN-0C-bTM"/>
                         <outlet property="gewichtLabel" destination="wDV-TD-4uX" id="r2O-IV-3x2"/>
                         <outlet property="gewichtSlider" destination="JDH-Gj-szD" id="SQE-SP-9BW"/>
                         <outlet property="idealLabel" destination="RVD-Z5-ed5" id="bJA-IG-ZMk"/>
@@ -138,7 +137,7 @@
         <!--Trainingsplan-->
         <scene sceneID="utL-hI-H17">
             <objects>
-                <tableViewController id="zJJ-Zq-b2A" sceneMemberID="viewController">
+                <tableViewController id="zJJ-Zq-b2A" customClass="TraingsPlanTableViewController" customModule="GymTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oz9-N8-oXj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +195,7 @@
         <!--Trainingstag-->
         <scene sceneID="UcX-G3-GNO">
             <objects>
-                <tableViewController id="ihP-X8-Jen" userLabel="Trainingstag" sceneMemberID="viewController">
+                <tableViewController id="ihP-X8-Jen" userLabel="Trainingstag" customClass="TrainingsTagTableViewController" customModule="GymTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6qL-kM-0DL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,12 +240,17 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Traingstag" id="yh8-vt-beH">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eUb-82-wgQ"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eUb-82-wgQ">
+                            <connections>
+                                <segue destination="td7-v9-PVH" kind="unwind" unwindAction="cancelToPlanTableView:" id="jwV-mN-w13"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="NDg-09-DDU"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGw-tG-I2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="td7-v9-PVH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4037" y="1082"/>
         </scene>
@@ -286,7 +290,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Übungen" id="Y6H-TJ-u9H">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6rO-eR-BYL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6rO-eR-BYL">
+                            <connections>
+                                <segue destination="BMw-Fc-dD4" kind="unwind" unwindAction="cancelToTagTableView:" id="hZh-2w-MwZ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qdk-qc-zDw">
                             <connections>
                                 <segue destination="O2d-MR-SHZ" kind="presentation" id="KCw-hQ-MIE"/>
@@ -295,6 +303,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ES4-nf-4fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BMw-Fc-dD4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4861" y="291"/>
         </scene>
