@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		17467B391CE5D3F3009EBC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17467B381CE5D3F3009EBC6B /* AppDelegate.swift */; };
-		17467B3B1CE5D3F3009EBC6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17467B3A1CE5D3F3009EBC6B /* ViewController.swift */; };
+		17467B3B1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17467B3A1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift */; };
 		17467B3E1CE5D3F3009EBC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17467B3C1CE5D3F3009EBC6B /* Main.storyboard */; };
 		17467B401CE5D3F4009EBC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17467B3F1CE5D3F4009EBC6B /* Assets.xcassets */; };
 		17467B431CE5D3F4009EBC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17467B411CE5D3F4009EBC6B /* LaunchScreen.storyboard */; };
 		17467B4E1CE5D3F4009EBC6B /* GymTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17467B4D1CE5D3F4009EBC6B /* GymTrackerTests.swift */; };
+		17467B591CE61206009EBC6B /* TrainingsTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17467B581CE61206009EBC6B /* TrainingsTagViewController.swift */; };
+		17AA14961CE726640077627E /* TrainingsTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA14951CE726640077627E /* TrainingsTagTableViewCell.swift */; };
+		17AA14981CE726710077627E /* TraingsPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA14971CE726710077627E /* TraingsPlanTableViewCell.swift */; };
+		17AA149A1CE726840077627E /* UbungenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA14991CE726840077627E /* UbungenTableViewCell.swift */; };
+		17AA149C1CE72C330077627E /* UbungenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA149B1CE72C330077627E /* UbungenViewController.swift */; };
+		17AA149E1CE735060077627E /* UbungenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA149D1CE735060077627E /* UbungenTableViewController.swift */; };
+		17AA14A01CE75FF70077627E /* Ubung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA149F1CE75FF70077627E /* Ubung.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,7 @@
 /* Begin PBXFileReference section */
 		17467B351CE5D3F3009EBC6B /* GymTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17467B381CE5D3F3009EBC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17467B3A1CE5D3F3009EBC6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17467B3A1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsPlanViewController.swift; sourceTree = "<group>"; };
 		17467B3D1CE5D3F3009EBC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17467B3F1CE5D3F4009EBC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17467B421CE5D3F4009EBC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +43,13 @@
 		17467B491CE5D3F4009EBC6B /* GymTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17467B4D1CE5D3F4009EBC6B /* GymTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTrackerTests.swift; sourceTree = "<group>"; };
 		17467B4F1CE5D3F4009EBC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17467B581CE61206009EBC6B /* TrainingsTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsTagViewController.swift; sourceTree = "<group>"; };
+		17AA14951CE726640077627E /* TrainingsTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsTagTableViewCell.swift; sourceTree = "<group>"; };
+		17AA14971CE726710077627E /* TraingsPlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraingsPlanTableViewCell.swift; sourceTree = "<group>"; };
+		17AA14991CE726840077627E /* UbungenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbungenTableViewCell.swift; sourceTree = "<group>"; };
+		17AA149B1CE72C330077627E /* UbungenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbungenViewController.swift; sourceTree = "<group>"; };
+		17AA149D1CE735060077627E /* UbungenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbungenTableViewController.swift; sourceTree = "<group>"; };
+		17AA149F1CE75FF70077627E /* Ubung.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ubung.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +92,15 @@
 			isa = PBXGroup;
 			children = (
 				17467B381CE5D3F3009EBC6B /* AppDelegate.swift */,
-				17467B3A1CE5D3F3009EBC6B /* ViewController.swift */,
+				17467B3A1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift */,
+				17467B581CE61206009EBC6B /* TrainingsTagViewController.swift */,
 				17467B3C1CE5D3F3009EBC6B /* Main.storyboard */,
+				17AA149B1CE72C330077627E /* UbungenViewController.swift */,
+				17AA149D1CE735060077627E /* UbungenTableViewController.swift */,
+				17AA14991CE726840077627E /* UbungenTableViewCell.swift */,
+				17AA149F1CE75FF70077627E /* Ubung.swift */,
+				17AA14951CE726640077627E /* TrainingsTagTableViewCell.swift */,
+				17AA14971CE726710077627E /* TraingsPlanTableViewCell.swift */,
 				17467B3F1CE5D3F4009EBC6B /* Assets.xcassets */,
 				17467B411CE5D3F4009EBC6B /* LaunchScreen.storyboard */,
 				17467B441CE5D3F4009EBC6B /* Info.plist */,
@@ -197,7 +218,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17467B3B1CE5D3F3009EBC6B /* ViewController.swift in Sources */,
+				17AA14961CE726640077627E /* TrainingsTagTableViewCell.swift in Sources */,
+				17AA149A1CE726840077627E /* UbungenTableViewCell.swift in Sources */,
+				17467B3B1CE5D3F3009EBC6B /* TrainingsPlanViewController.swift in Sources */,
+				17AA14981CE726710077627E /* TraingsPlanTableViewCell.swift in Sources */,
+				17AA149E1CE735060077627E /* UbungenTableViewController.swift in Sources */,
+				17AA14A01CE75FF70077627E /* Ubung.swift in Sources */,
+				17467B591CE61206009EBC6B /* TrainingsTagViewController.swift in Sources */,
+				17AA149C1CE72C330077627E /* UbungenViewController.swift in Sources */,
 				17467B391CE5D3F3009EBC6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +416,7 @@
 				17467B541CE5D3F4009EBC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17467B551CE5D3F4009EBC6B /* Build configuration list for PBXNativeTarget "GymTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +425,7 @@
 				17467B571CE5D3F4009EBC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
