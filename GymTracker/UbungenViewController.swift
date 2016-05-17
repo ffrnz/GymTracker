@@ -32,7 +32,12 @@ class UbungenViewController: UIViewController, UITextFieldDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        // Handle the text field’s user input through delegate callbacks.
+        ubungName.delegate = self
+        
+        // Enable the Save button only if the text field has a valid Meal name.
+        checkValidUbungName()
     }
 
     // MARK: - Actions
@@ -53,7 +58,7 @@ class UbungenViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBAction func saveUbung(segue:UIStoryboardSegue) {
     }
      
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveButton === sender {
             let name = ubungName.text ?? ""
             let big = ubungBig.on
@@ -63,7 +68,34 @@ class UbungenViewController: UIViewController, UITextFieldDelegate, UINavigation
             ubung = Ubung(name: name, big: big, idealGewicht: idealGewicht)
         }
  
-     }
+    }
+    
+    // MARK: UITextFieldDelegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //Hide the Keybord
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        // Disable the Save button while editing.
+        saveButton.enabled = false
+    }
+    
+    func checkValidUbungName() {
+        // Disable the Save button if the text field is empty.
+        let text = ubungName.text ?? ""
+        saveButton.enabled = !text.isEmpty
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        ubungName.text = textField.text
+        checkValidUbungName()
+        navigationItem.title = textField.text
+        
+    }
+    
 
 
 
