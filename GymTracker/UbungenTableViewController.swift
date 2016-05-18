@@ -66,10 +66,18 @@ class UbungenTableViewController: UITableViewController {
     }
     @IBAction func saveToUbungenTableView(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.sourceViewController as? UbungenViewController, ubung = sourceViewController.ubung {
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                // Update an existing ubung. ??????????????????????????
+                ubungen[selectedIndexPath.row] = ubung
+                tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
+            }
+            else {
+            
             let newIndexPath = NSIndexPath(forRow: ubungen.count, inSection: 0)
             ubungen.append(ubung)
             tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
-            
+            }
         }
             
         
@@ -103,9 +111,9 @@ class UbungenTableViewController: UITableViewController {
         }
         
         let editClosure = { (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
-            print("Edit closure called")
             
-            self.performSegueWithIdentifier("ShowDetail", sender: nil)
+            
+            self.performSegueWithIdentifier("ShowDetail", sender: indexPath)
         }
         
         let deleteAction = UITableViewRowAction(style: .Default, title: "Delete", handler: deleteClosure)
@@ -160,9 +168,8 @@ class UbungenTableViewController: UITableViewController {
         
         if segue.identifier == "ShowDetail" {
             let ubungDetailViewController = segue.destinationViewController as! UbungenViewController
-            if let selectedUbungCell = sender as? UbungenTableViewCell {
-                let indexPath = tableView.indexPathForCell(selectedUbungCell)!
-                let selectedUbung = ubungen[indexPath.row]
+            if let selectedUbungCell = sender as? NSIndexPath {
+                let selectedUbung = ubungen[selectedUbungCell.row]
                 ubungDetailViewController.ubung = selectedUbung
             }
         }

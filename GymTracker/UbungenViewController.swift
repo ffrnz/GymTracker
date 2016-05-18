@@ -38,10 +38,10 @@ class UbungenViewController: UIViewController, UITextFieldDelegate, UINavigation
         
         // Set up views if editing an existing
         if let ubung = ubung {
-            navigationItem.title = ubung.name
-            ubungName.text   = ubung.name
-            ubungBig.enabled = ubung.big
-            idealSlider.value = Float(ubung.idealGewicht)
+            navigationItem.title    = ubung.name
+            ubungName.text          = ubung.name
+            ubungBig.enabled        = ubung.big
+            idealSlider.value       = Float(ubung.idealGewicht)
             
         }
         
