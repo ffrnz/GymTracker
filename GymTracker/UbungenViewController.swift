@@ -36,8 +36,20 @@ class UbungenViewController: UIViewController, UITextFieldDelegate, UINavigation
         // Handle the text field’s user input through delegate callbacks.
         ubungName.delegate = self
         
+        // Set up views if editing an existing
+        if let ubung = ubung {
+            navigationItem.title = ubung.name
+            ubungName.text   = ubung.name
+            ubungBig.enabled = ubung.big
+            idealSlider.value = Float(ubung.idealGewicht)
+            
+        }
+        
         // Enable the Save button only if the text field has a valid Meal name.
         checkValidUbungName()
+        
+        
+
     }
 
     // MARK: - Actions
